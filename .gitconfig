@@ -1,0 +1,19 @@
+[alias]
+	c = commit
+	s = status
+	bb = branch
+	co = checkout
+	b = checkout -b
+	cb = rev-parse --abbrev-ref HEAD
+[user]
+	email = zwetsloot.robert.jan@techcross.co.jp
+	name = zwetsloot robert jan
+[color "branch"]
+	local = blue
+	current = blue reverse
+[color "status"]
+	added = cyan bold
+	changed = cyan
+	untracked = blue dim
+[core]
+	editor = /usr/bin/vim
