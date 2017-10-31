@@ -1,0 +1,9 @@
+setup commands:
+
+alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+echo ".cfg" >> .gitignore
+git clone --bare git@github.com:nanaki04/nanaki04_dot.git $HOME/.cfg
+dot config --local status.showUntrackedFiles no
+dot checkout
+dot submodule init
+dot submodule update
