@@ -19,5 +19,10 @@ function! SetupEnvironment()
     setlocal softtabstop=4
     setlocal shiftwidth=4
   endif
+  if l:path =~ '/Users/robertjanzwetsloot/Projects/fencer/fencer-vagrant/fencer_code_generator'
+    setlocal tabstop=2
+    setlocal softtabstop=2
+    setlocal shiftwidth=2
+  endif
 endfunction
 autocmd! BufReadPost,BufNewFile * call SetupEnvironment()

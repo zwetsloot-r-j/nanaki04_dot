@@ -17,6 +17,7 @@
 	untracked = blue dim
 [core]
 	editor = /usr/bin/vim
+	excludesfile = /Users/robertjanzwetsloot/.gitignore
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
