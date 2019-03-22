@@ -5,6 +5,9 @@
 	co = checkout
 	b = checkout -b
 	cb = rev-parse --abbrev-ref HEAD
+  mv = branch -m
+	hotkeys = config --global -l
+	ce = commit --allow-empty
 [user]
 	email = zwetsloot.robert.jan@techcross.co.jp
 	name = zwetsloot robert jan
