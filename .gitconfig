@@ -9,7 +9,7 @@
 	hotkeys = config --global -l
 	ce = commit --allow-empty
 [user]
-	email = zwetsloot.robert.jan@techcross.co.jp
+	email = jan.zwetsloot@adglobe.co.jp
 	name = zwetsloot robert jan
 [color "branch"]
 	local = blue
@@ -17,12 +17,17 @@
 [color "status"]
 	added = cyan bold
 	changed = cyan
-	untracked = blue dim
+	untracked = blue bold
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/robertjanzwetsloot/.gitignore
+	filemode = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[credential]
+  helper = !aws codecommit credential-helper $@
+  UseHttpPath = true

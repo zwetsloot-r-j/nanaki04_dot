@@ -9,20 +9,16 @@ set expandtab
 set number
 set listchars=tab:▸\ ,eol:¬
 set list
+set tags=tags;/
 colorscheme wombat256i
 let mapleader = ","
 autocmd FileType typescript nmap <buffer> <Leader>a <Plug>(TsuquyomiRenameSymbolC)
 function! SetupEnvironment()
   let l:path = expand('%:p')
-  if l:path =~ '/Users/robertjanzwetsloot/Projects/fencer'
+  if l:path =~ '/home/jan/projects/LMVlayouter'
     setlocal tabstop=4
     setlocal softtabstop=4
     setlocal shiftwidth=4
-  endif
-  if l:path =~ '/Users/robertjanzwetsloot/Projects/fencer/fencer-vagrant/fencer_code_generator'
-    setlocal tabstop=2
-    setlocal softtabstop=2
-    setlocal shiftwidth=2
   endif
 endfunction
 autocmd! BufReadPost,BufNewFile * call SetupEnvironment()
