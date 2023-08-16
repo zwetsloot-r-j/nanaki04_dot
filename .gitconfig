@@ -19,7 +19,7 @@
 	changed = cyan
 	untracked = blue bold
 [core]
-	editor = /usr/bin/vim
+	editor = /snap/bin/nvim
 	excludesfile = /Users/robertjanzwetsloot/.gitignore
 	filemode = false
 [filter "lfs"]
@@ -31,3 +31,5 @@
 [credential]
   helper = !aws codecommit credential-helper $@
   UseHttpPath = true
+[pull]
+	rebase = false
